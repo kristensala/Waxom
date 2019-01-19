@@ -1,0 +1,35 @@
+.row-1 {
+    max-width: 116rem;
+    margin: 0 auto;
+    
+
+
+    // &:not(:last-child) { // margin bottom wont apply to the last child
+    //     margin-bottom: $gutter-vertical;
+    // }
+    
+   // @include clearfix;
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    [class^= "col-"] { // select all elements which class starts with col- (^ - start; * - contains; $ - ends with)
+        float: left;
+
+        &:not(:last-child) {
+            margin-right: 3rem;
+        }
+    }
+
+    .col-1-of-3 {
+        width: calc((100% - 2*3rem) / 3);
+    }
+
+    .col-1-of-4 {
+        //background-color: orangered;
+        width: calc((100% - 3*3rem) / 4);
+    }
+}
+

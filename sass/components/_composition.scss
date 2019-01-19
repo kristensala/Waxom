@@ -1,0 +1,27 @@
+.composition {
+    position: relative;
+
+    &__photo {
+        position: absolute;
+
+        &--p1 {
+            top: 8.8rem;
+            left: 18%;
+            z-index: 100; 
+        
+        }
+
+        &--p2 {
+            left: 50%;
+            transform: translate(-50%, 0);
+            z-index: 200;
+
+        }
+
+        &--p3 {
+            top: 8.8rem;
+            right: 18%;
+            z-index: 50;
+        }
+    }
+}

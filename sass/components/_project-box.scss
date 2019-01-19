@@ -1,0 +1,114 @@
+.project-box {
+    position: relative;
+    height: 35rem;
+    overflow: hidden;
+
+    &__picture {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: top;
+        z-index: 100;
+
+        &--p1 {
+            transform: translateY(-2.5rem);
+            background-image: url(../img/project-1.png);
+
+        }
+
+        &--p2 {
+            background-image: url(../img/project-2.png);
+        }
+
+        &--p3 {
+            background-image: url(../img/project-3.png);
+        }
+
+        &--p4 {
+            background-image: url(../img/project-4.png);
+
+        }
+
+        &--p5 {
+            background-image: url(../img/project-5.png);
+        }
+
+        &--p6 {
+            background-image: url(../img/project-6.png);
+        }
+
+    }
+
+    .arrow-container {
+        position: absolute;
+        width: 100%;
+        bottom: 0;    
+        background-color: $color-white-1;
+        z-index: 200;
+
+
+        // This makes an arrow ontop of the div
+        &::after {
+            border-bottom: 1rem solid $color-white-1;
+            border-left: 1.5rem solid transparent; 
+            border-right: 1.5rem solid transparent; 
+            top: -.9rem;
+            content: "";
+            position: absolute;
+            left: 5%;
+        }
+    }
+
+    &:hover .arrow-container{
+        background-color: $color-dark-3;
+
+        &::after {
+            border-bottom: 1rem solid $color-dark-3;
+        }
+    }
+
+    &:hover .heading-quaternary {
+
+        &--main {
+            color: $color-white;
+        }
+
+        &--sub {
+            color: $color-primary-light;
+        }
+
+    }
+
+    &:hover &__picture {
+        filter: brightness(40%);
+    }
+
+
+    &__details {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: inline-block;
+        z-index: 1000000;
+        visibility: hidden; 
+
+        .btn-detail {
+
+            &--left {
+                float: left;
+                margin-right: 2.8rem;
+            }
+
+            &--right {
+               float: right;
+            }
+        }
+    }
+
+    &:hover &__details {
+        visibility: visible;
+    }
+}

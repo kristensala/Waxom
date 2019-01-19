@@ -1,0 +1,57 @@
+.section-features {
+    background-color: $color-white;
+    padding: 8rem 0;
+}
+
+.section-preview {
+    background-color: $color-white-1;
+    padding: 8rem 0 51.4rem 0;
+}
+
+.section-purchase {
+    padding: 4.9rem 0;
+    background-image: linear-gradient(to right, #211b19, #4e3427);
+
+    &__container {
+        margin: 0 auto;
+        max-width: 130rem;
+    }
+}
+
+.section-projects {
+    padding: 8rem 0;
+    background-color: $color-white;
+}
+
+.section-presentation {
+    padding: 21rem 0;
+    background-image: linear-gradient(to right bottom
+    , rgba(17, 17, 17, .4)
+    , rgba(17, 17, 17, .4))
+    , url(../img/desk.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.section-mobile {
+    padding: 19.4rem 0;
+    position: relative;
+    //background-color: orangered;
+    
+    .logo-container {
+        position: absolute;
+        top: 11.4rem;
+        left: 28%;
+        
+        .phone-logo {
+            height: 55rem;
+        }
+    }
+
+    .container {
+        display: inline-block;
+        max-width: 66rem;
+        margin-left: 50%;
+    }
+}

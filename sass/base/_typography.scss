@@ -1,0 +1,138 @@
+.heading-primary {
+    color: $color-white;
+    font-family: $font-primary;
+
+    &--1 {
+        display: block;
+        font-size: 3.6rem;
+        font-weight: 500;
+        margin-bottom: 1.4rem;
+    }
+
+    &--2 {
+        display: block;
+        font-size: 5.2rem;
+        font-weight: 800;
+        margin-bottom: 1.9rem;
+
+    }
+
+    &--3 {
+        display: block;
+        font-size: $default-font-size;
+        font-weight: 600;
+        max-width: 58rem;
+        line-height: 2.5rem;
+        margin-bottom: 5rem;
+    }
+}
+
+.heading-secondary {
+    display: inline-block;
+
+    &--main {
+        display: block;
+        font-family: $font-primary;
+        font-weight: 600;
+        font-size: 3rem;
+        color: $color-grey-1;
+        margin-bottom: 2.4rem;
+
+        &--white {
+            color: white;
+        }
+    }
+
+    &--sub {
+        display: block;
+        font-family: $font-secondary;
+        font-weight: 300;
+        font-size: 1.6rem;
+        color: $color-grey-2;
+        max-width: 75rem;
+
+        &--white {
+            color: white;
+        }
+    }
+
+    
+}
+
+
+.heading-tertiary {
+    display: inline-block;
+    
+    &--first {
+        color: #b7a48d;
+    }
+    &--main {
+        display: block;
+        font-family: $font-primary;
+        font-weight: 500;
+        font-size: 2.8rem;
+        color: $color-white;
+        margin-bottom: .8rem;
+
+        
+    }
+
+    &--sub {
+        display: block;
+        font-family: $font-primary;
+        font-weight: 500;
+        font-size: 1.8rem;
+        color: rgba(97, 88, 85, 255);
+    }
+}
+
+.heading-quaternary {
+    display: inline-block;
+    //padding-left: 2.8rem;
+    padding: 3rem 2.8rem 3rem 2.8rem;
+
+    &--main {
+        display: block;
+        color: $color-primary-light;
+        font-family: $font-primary;
+        font-size: 2rem;
+        font-weight: 500;
+        margin-bottom: 1.4rem;
+    }
+
+    &--sub {
+        display: block;
+        font-family: $font-secondary;
+        font-size: 1.4rem;
+        font-weight: 300;
+        color: rgba(209, 209, 209, 255);
+    }
+}
+
+.paragraph-time {
+    margin-top: 4rem;
+    font-family: $font-secondary;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: $color-primary-light;
+}
+
+.paragraph-list {
+    font-family: $font-secondary;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 2;
+    color: $color-grey-2;
+    padding-left: 5rem;
+    list-style-type: none;
+
+
+    .bullet {
+        height: 2rem;
+        width: 2rem;
+        border-radius: 50%;
+        display: inline-block;
+        background-color: $color-primary-light;
+        margin-right: 3rem;
+    }
+}

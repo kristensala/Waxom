@@ -1,0 +1,31 @@
+.project-filters {
+    //background-color: orangered;
+    display: inline-block;
+
+    li {
+        display: inline;
+
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
+    }
+
+    .btn-filter {
+        text-decoration: none;
+        font-family: $font-secondary;
+        font-size: 1.4rem;
+        font-weight: 300;
+        color: $color-grey-2;
+        padding: .8rem 2rem;
+        border: 1px solid $color-primary-extra-light;
+        border-radius: .3rem;
+
+        &:hover,
+        &.active {
+            color: $color-white;
+            background-color: $color-primary-dark;
+        }
+
+
+    }
+}

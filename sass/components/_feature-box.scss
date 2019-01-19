@@ -1,0 +1,57 @@
+.feature-box {
+    text-align: center;
+    //border-bottom: .2rem solid $color-primary-extra-light;
+    position: relative;
+
+    &__icon {
+        margin-bottom: 3rem;
+    }
+
+    &__text {
+        font-family: $font-secondary;
+        font-size: 1.4rem;
+        font-weight: 300;
+        color: $color-grey-2;
+        margin-top: 2rem;
+    }
+
+    &__heading {
+        font-family: $font-primary;
+        font-size: 2.2rem;
+        font-weight: 600;
+        color: $color-grey-1;
+        
+    }
+
+    // changing the heading and border bottom color on hover
+    &:hover &__heading{
+        color: $color-primary-light;
+
+        &::before {
+            content : "";
+            position: absolute;
+            left    : 50%;
+            transform: translateX(-50%);
+            bottom  : -3rem;
+            //height  : 5px;
+            width   : 7rem;
+            border-bottom: 3px solid $color-primary-light;
+        
+        }
+    }
+
+    //changing border bottom length to 7rem
+    &::before {
+        content : "";
+        position: absolute;
+        left    : 50%;
+        transform: translateX(-50%);
+        bottom  : -3rem;
+        //height  : 5px;
+        width   : 7rem;
+        border-bottom: 3px solid $color-primary-extra-light;
+    
+    }
+
+    
+}
